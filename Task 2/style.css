@@ -13,11 +13,11 @@
 
 .sidebar {
     width: 285px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #222047;
     color: white;
     padding: 25px 15px;
-    
+    flex-shrink: 0;
 }
 
 .main-container {
@@ -191,4 +191,122 @@ list-style: none;
 
 .section2{
     border-color: #b9b7c0;
+}
+
+
+
+.stats-section {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+}
+
+.section1,
+.section2 {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    border: 1px solid #e3e3f1;
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 0 3px 8px rgba(30, 30, 80, 0.06);
+}
+
+.section1 h1,
+.section2 h1 {
+    font-size: 25px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eeeeF5;
+    margin-bottom: 10px;
+}
+
+
+.course {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 0;
+    border-bottom: 1px solid #eeeeF5;
+}
+
+.course img{
+    width: 65px;
+    height: auto;
+}
+
+.course-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.course-details h2 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.course-details p {
+    color: #555b7c;
+    font-size: 15px;
+}
+
+.course-progress {
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.course-progress span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #e5e5f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: #6845d5;
+    border-radius: 20px;
+}
+
+
+.assignment {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeF5;
+}
+
+.assignment img{
+    width: 50px;
+    height: auto;
+}
+
+.assignment-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.assignment-details h2 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.assignment-details p {
+    font-size: 15px;
+    color: #555b7c;
+}
+
+.status {
+    background-color: #ffe5e9;
+    color: #dc3450;
+    padding: 9px 13px;
+    border-radius: 10px;
+    font-size: 14px;
 }
